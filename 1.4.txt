@@ -21,7 +21,7 @@ Console.WriteLine(product);
 
 /*ЗАДАНИЕ 2:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.4/numsTask2.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/numsTask2.txt";
 string[] numbers = File.ReadAllText(path).Split(';');
 float[] nums = new float[numbers.Length];
 float sum = 0;
@@ -48,7 +48,7 @@ Console.WriteLine(sum);
 
 /*ЗАДАНИЕ 3:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.4/numsTask3.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/numsTask3.txt";
 string[] numbers = File.ReadAllText(path).Split(',');
 int[] nums = new int[numbers.Length];
 int min = int.Parse(numbers[0]);
@@ -82,7 +82,7 @@ Console.WriteLine(min +" < "+ max);
 
 /*ЗАДАНИЕ 4:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.4/numsTask4.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/numsTask4.txt";
 string[] numbers = File.ReadAllText(path).Split(' ');
 int count = 0;
 

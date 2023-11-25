@@ -1,6 +1,6 @@
 /*ЗАДАНИЕ 1:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.3/input.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/input.txt";
 string[] lines = File.ReadAllLines(path);
 int[] chosenNumbers = lines[0].Split().Select(int.Parse).ToArray();
 int n = int.Parse(lines[1]);
@@ -13,7 +13,7 @@ for (int i = 0; i < n; i++)
     results[i] = matchCount >= 3 ? "Lucky" : "Unlucky";
 }
 
-File.WriteAllLines("/Users/aleksej/Documents/Учёба/C#/Практика 1/1.3/output.txt", results);
+File.WriteAllLines("/Users/aleksej/Documents/Git/C#/Практика 1/output.txt", results);
 */
 
 
@@ -27,7 +27,7 @@ File.WriteAllLines("/Users/aleksej/Documents/Учёба/C#/Практика 1/
 
 /*ЗАДАНИЕ 2:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.3/nums.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/nums.txt";
 string[] chech = File.ReadAllText(path).Split(' ');
 int[] nums = new int[chech.Length];
 
@@ -52,7 +52,7 @@ for (int i = 0; i < chech.Length; ++i)
 
 /*ЗАДАНИЕ 3:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.3/height.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/height.txt";
 using (StreamReader record = new StreamReader(path))
 {
     string line;

@@ -1,6 +1,6 @@
 /*ЗАДАНИЕ 1:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.6/numsTask1.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/numsTask1.6.txt";
 string[] words = File.ReadAllText(path).Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
 foreach (string n in words)
@@ -20,7 +20,7 @@ foreach (string n in words)
 
 /*ЗАДАНИЕ 2:
 
-string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.6/numsTask2.txt";
+string path = "/Users/aleksej/Documents/Git/C#/Практика 1/numsTask2.6.txt";
 string[] words = File.ReadAllLines(path);
 Console.WriteLine(string.Join(" ", words));
 */
