@@ -1,0 +1,213 @@
+﻿/*ЗАДАНИЕ 1:
+
+string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.6/numsTask1.txt";
+string[] words = File.ReadAllText(path).Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+foreach (string n in words)
+{
+    if (n.Length % 2 != 0)
+    {
+        Console.WriteLine(n);
+    }
+}
+*/
+
+
+
+
+
+
+
+/*ЗАДАНИЕ 2:
+
+string path = "/Users/aleksej/Documents/Учёба/C#/Практика 1/1.6/numsTask2.txt";
+string[] words = File.ReadAllLines(path);
+Console.WriteLine(string.Join(" ", words));
+*/
+
+
+
+
+
+
+
+
+/*ЗАДАНИЕ 3:
+
+Console.WriteLine("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+
+if (num % 2 == 0 || num % 10 == 0)
+{
+    Console.WriteLine($"Число {num} чётное и кратное 10");
+}
+else
+{
+    Console.WriteLine($"Число {num} не соответствует требованиям");
+}
+*/
+
+
+
+
+
+
+
+
+/*ЗАДАНИЕ 4:
+
+Console.WriteLine("Вводите положительные числа (для завершения введите отрицательное): ");
+List<float> numbers = new List<float>();
+float input = 0;
+
+do
+{
+    input = float.Parse(Console.ReadLine());
+    if (input > 0)
+    {
+        numbers.Add(input);
+    }
+} while (input > 0);
+
+Console.WriteLine("Введите число a: ");
+float a = float.Parse(Console.ReadLine());
+
+float sum = 0;
+
+foreach (float n in numbers)
+{
+    if (n % a == 0)
+    {
+        sum += n;
+    }
+}
+Console.WriteLine("\nСумма = " + sum); 
+*/
+
+
+
+
+
+
+
+
+
+
+/*ЗАДАНИЕ 5:
+
+Console.WriteLine("Введите кол-во срок ");
+int rows = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите кол-во столбцов ");
+int columns = int.Parse(Console.ReadLine());
+
+int[,] matrix = new int[rows, columns + 1];
+Random rnd = new Random();
+Console.WriteLine("Исходная матрица: ");
+
+for (int i = 0; i < rows; ++i)
+{
+    for (int j = 0; j < columns; ++j)
+    {
+        matrix[i, j] = rnd.Next(0, 2);
+    }
+}
+for (int i = 0; i < rows; ++i)
+{
+    for (int j = 0; j < columns; ++j)
+    {
+        Console.Write(matrix[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine("Матрица с доп.столбиком");
+
+for (int i = 0; i < rows; ++i)
+{
+    int score = 0;
+
+    for (int j = 0; j < columns; ++j)
+    {
+        if (matrix[i, j] == 1)
+        {
+            score++;
+        }
+
+    }
+    if (score % 2 != 0)
+    {
+        matrix[i, columns] = 1;
+    }
+    else
+    {
+        matrix[i, columns] = 0;
+    }
+}
+
+for (int i = 0; i < rows; ++i)
+{
+    for (int j = 0; j < columns + 1; ++j)
+    {
+        Console.Write(matrix[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
+
+
+
+
+
+
+
+
+/*ЗАДАНИЕ 6:
+
+Random rnd = new Random();
+int score = rnd.Next(5, 15);
+float[] numbers = new float[score];
+
+List<float> numbersPositive = new List<float>();
+List<float> numbersNegative = new List<float>();
+
+for (int i = 0; i < numbers.Length; ++i)
+{
+    Random rand = new Random();
+    float nums = rand.Next(-15, 15);
+    numbers[i] = nums;
+    float num = 0;
+
+    if (numbers[i] >= 0)
+    {
+        num = numbers[i];
+        numbersPositive.Add(num);
+    }
+    else
+    {
+        num = numbers[i];
+        numbersNegative.Add(num);
+    }
+}
+
+Console.Write("Исходный массив: ");
+
+foreach (int n in numbers)
+{
+    Console.Write(n + " ");
+}
+
+
+Console.Write("\n\nПоложительные: ");
+
+foreach (int positive in numbersPositive)
+{
+    Console.Write(positive + " ");
+}
+Console.Write("\nОтрицательные: ");
+
+foreach (int negative in numbersNegative)
+{
+    Console.Write(negative + " ");
+}
+*/
